@@ -159,7 +159,7 @@ adminbutton.TextSize = 14.000
 adminbutton.TextStrokeTransparency = 0.000
 adminbutton.TextWrapped = true
 adminbutton.MouseButton1Click:connect(function()
-	IDFORSPAWNER = IDFORSPAWNER --Change this to one of your own gamepass.
+	IDFORSPAWNER = 7718369 --Change this to one of your own gamepass.
 game.Workspace.GiveTool:FireServer(IDFORSPAWNER, "SuperFlyGoldBoombox")
 game.Workspace.GiveTool:FireServer(IDFORSPAWNER, "PompousTheCloud")
 game:GetService("StarterGui"):SetCore("SendNotification", {
