@@ -1393,8 +1393,8 @@ OpenGUI.Visible = true
 CheckPlayer.Visible = false
 elseif game.Players.LocalPlayer.Name == "AlphaBanners" then
 	wait(5)
-    Status.Text = "Status: Hello AlphaBanners! Happy To have you here Buyer! :)"
-    wait(5)
+Status.Text = "Status: Hello AlphaBanners! Happy to have you here Buyer! :)"
+wait(5)
 OpenGUI.Visible = true
 CheckPlayer.Visible = false
 elseif game.Players.LocalPlayer.Name == "Blacklisted" then
