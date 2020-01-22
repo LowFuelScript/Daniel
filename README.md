@@ -1380,15 +1380,21 @@ Open.MouseButton1Click:connect(function()
 end)
 -- whitelist;
 if game.Players.LocalPlayer.Name == "8hpx" then
-	wait(10)
+	wait(5)
     Status.Text = "Status: Hello 8hpx! Happy To have you here Co-Owner! :)"
     wait(5)
 OpenGUI.Visible = true
 CheckPlayer.Visible = false
 elseif game.Players.LocalPlayer.Name == "HaxWeak" then
-	wait(10)
+	wait(5)
 Status.Text = "Status: Hello HaxWeak! Happy to have you here Owner! :)"
 wait(5)
+OpenGUI.Visible = true
+CheckPlayer.Visible = false
+elseif game.Players.LocalPlayer.Name == "AlphaBanners" then
+	wait(5)
+    Status.Text = "Status: Hello AlphaBanners! Happy To have you here Buyer! :)"
+    wait(5)
 OpenGUI.Visible = true
 CheckPlayer.Visible = false
 elseif game.Players.LocalPlayer.Name == "Blacklisted" then
