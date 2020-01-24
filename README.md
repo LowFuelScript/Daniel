@@ -159,12 +159,12 @@ adminbutton.TextSize = 14.000
 adminbutton.TextStrokeTransparency = 0.000
 adminbutton.TextWrapped = true
 adminbutton.MouseButton1Click:connect(function()
-	IDFORSPAWNER = 7718369 --Change this to one of your own gamepass.
+IDFORSPAWNER = 7718369 --Change this to one of your own gamepass.
 game.Workspace.GiveTool:FireServer(IDFORSPAWNER, "SuperFlyGoldBoombox")
 game.Workspace.GiveTool:FireServer(IDFORSPAWNER, "PompousTheCloud")
 game:GetService("StarterGui"):SetCore("SendNotification", {
-  Title = "TRXSH GANG Admin",
-  Text = "FUCK ALL THE LEAKERS ^cmds to view them",
+  Title = "Low Fuel Admin",
+  Text = "Hello",
   Icon = "rbxassetid://4597682485"})
 game:GetService("Players").LocalPlayer.Chatted:Connect(function(msg)
     if msg:lower() == "^cmds" then
@@ -593,181 +593,6 @@ C.workspace.Buy:FireServer(0, "PompousTheCloud") -- DON'T EDIT
 MainUserP["Backpack"]:WaitForChild("PompousTheCloud").Parent = MainUserW -- DON'T EDIT
 CE:FireEvent("PompousTheCloud",MainUserW["Torso"],"Transparency","1")
     end
-            if msg:lower() == "^test" then
-	
-		local UserName  = game:GetService('Players').LocalPlayer.Name
-local Autoride = true
-workspace.GiveTool:FireServer(XXX,"PompousTheCloud")
-workspace.GiveTool:FireServer(XXX,"SuperFlyGoldBoombox")
-local Icon, Mesh, Texture = 4106914537, 1254388357, 3806584137
-local Name, ToolTip = "SuperFlyGoldBoombox", "Love you, By RIP_Demonic"
-
-local CE = {}
-local Variables = {
-	workspace = game:GetService("Workspace"),
-	players = game:GetService("Players")
-}
-
-local MainUserP, MainUserW = Variables.players.LocalPlayer, Variables.workspace:FindFirstChild(UserName)
-
-function CE:FireEvent(ItemName, Object, Property, Value)
-	MainUserW:FindFirstChild(ItemName)["ServerControl"]:InvokeServer("SetProperty",{["Value"]=Value,["Property"]=Property,["Object"]=Object})
-end
-
-Variables.workspace.Buy:FireServer(0, "PompousTheCloud")
-MainUserP["Backpack"]:WaitForChild("PompousTheCloud").Parent = MainUserW
-
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"],"TextureId","rbxassetid://"..Icon)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Mesh"],"MeshId","rbxassetid://"..Mesh)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Mesh"],"TextureId","rbxassetid://"..Texture)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Mesh"],"Scale",Vector3.new(0.1,0.1,0.1))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["BoomboxSound"],"Name","Ultimax")
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Ultimax"],"Playing",false)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Ultimax"],"Volume","999999")
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Ultimax"],"EmmiterSize","999999")
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Ultimax"],"MaxDistance","999999")
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Ultimax"],"Looped",true)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Ultimax"],"Playing",true)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"],"Material","ForceField")
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"],"BrickColor",BrickColor.new(255,0,255))
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"]["Mesh"],"Scale",Vector3.new(0.1,0.1,0.1))
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"],"Material","ForceField")
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"],"BrickColor",BrickColor.new(0,0,0))
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"]["Mesh"],"MeshId","rbxassetid://"..Mesh)
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"]["Mesh"],"TextureId","rbxassetid://"..Texture)
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"],"GripForward",Vector3.new(0,0,-1))
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"],"GripPos",Vector3.new(0,-1,0))
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"],"GripRight",Vector3.new(1,0,0))
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"],"GripUp",Vector3.new(0,1,0))
-CE:FireEvent("PompousTheCloud",MainUserW["Head"]["Mesh"],"Scale",Vector3.new(0.5,0.5,0.5))
-CE:FireEvent("PompousTheCloud",MainUserW["Head"]["Mesh"],"MeshId","rbxassetid://"..Mesh)
-CE:FireEvent("PompousTheCloud",MainUserW["Head"]["Mesh"],"TextureId","rbxassetid://"..Texture)
-CE:FireEvent("PompousTheCloud",MainUserW["Head"],"Material","ForceField")
-CE:FireEvent("PompousTheCloud",MainUserW["Head"],"BrickColor",BrickColor.new(255,0,255))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"],"GripForward",Vector3.new(0,0,-1))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"],"GripPos",Vector3.new(0,-1,0))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"],"GripRight",Vector3.new(1,0,0))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"],"GripUp",Vector3.new(0,1,0))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"],"ToolTip",ToolTip)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"],"CanBeDropped",true)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["LocalScript"],"Disabled",false)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"],"Name",Name)
-
-	game:GetService("RunService").Heartbeat:Connect(function()
-		local X = game.Workspace.RIP_Demonic.SuperFlyGoldBoombox.Handle.Ultimax.PlaybackLoudness / 3000 + .5
-        CE:FireEvent("PompousTheCloud",MainUserW["Head"]["Mesh"],"Scale",Vector3.new(X,X,X))
-	  
-	end)
-
-end
-if msg:lower() == "^music " then
-local UserName  = game:GetService('Players').LocalPlayer.Name
-local Autoride = true
-workspace.GiveTool:FireServer(XXX,"PompousTheCloud")
-workspace.GiveTool:FireServer(XXX,"SuperFlyGoldBoombox")
-local Icon, Mesh, Texture = 4106914537, 1254388357, 3806584137
-local Name, ToolTip = "SuperFlyGoldBoombox", "Love you, By RIP_Demonic"
-
-local CE = {}
-local Variables = {
-	workspace = game:GetService("Workspace"),
-	players = game:GetService("Players")
-}
-
-local MainUserP, MainUserW = Variables.players.LocalPlayer, Variables.workspace:FindFirstChild(UserName)
-
-function CE:FireEvent(ItemName, Object, Property, Value)
-	MainUserW:FindFirstChild(ItemName)["ServerControl"]:InvokeServer("SetProperty",{["Value"]=Value,["Property"]=Property,["Object"]=Object})
-end
-
-Variables.workspace.Buy:FireServer(0, "PompousTheCloud")
-MainUserP["Backpack"]:WaitForChild("PompousTheCloud").Parent = MainUserW
-
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"],"TextureId","rbxassetid://"..Icon)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Mesh"],"MeshId","rbxassetid://"..Mesh)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Mesh"],"TextureId","rbxassetid://"..Texture)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Mesh"],"Scale",Vector3.new(0.1,0.1,0.1))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["BoomboxSound"],"Name","Ultimax")
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Ultimax"],"Playing",false)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Ultimax"],"Volume","999999")
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Ultimax"],"EmmiterSize","999999")
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Ultimax"],"MaxDistance","999999")
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Ultimax"],"Looped",true)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"]["Ultimax"],"Playing",true)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"],"Material","ForceField")
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"],"BrickColor",BrickColor.new(255,0,255))
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"]["Mesh"],"Scale",Vector3.new(0.1,0.1,0.1))
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"],"Material","ForceField")
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"],"BrickColor",BrickColor.new(0,0,0))
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"]["Mesh"],"MeshId","rbxassetid://"..Mesh)
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"]["Mesh"],"TextureId","rbxassetid://"..Texture)
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"],"GripForward",Vector3.new(0,0,-1))
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"],"GripPos",Vector3.new(0,-1,0))
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"],"GripRight",Vector3.new(1,0,0))
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"],"GripUp",Vector3.new(0,1,0))
-CE:FireEvent("PompousTheCloud",MainUserW["Head"]["Mesh"],"Scale",Vector3.new(0.5,0.5,0.5))
-CE:FireEvent("PompousTheCloud",MainUserW["Head"]["Mesh"],"MeshId","rbxassetid://"..Mesh)
-CE:FireEvent("PompousTheCloud",MainUserW["Head"]["Mesh"],"TextureId","rbxassetid://"..Texture)
-CE:FireEvent("PompousTheCloud",MainUserW["Head"],"Material","ForceField")
-CE:FireEvent("PompousTheCloud",MainUserW["Head"],"BrickColor",BrickColor.new(255,0,255))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"],"GripForward",Vector3.new(0,0,-1))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"],"GripPos",Vector3.new(0,-1,0))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"],"GripRight",Vector3.new(1,0,0))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"],"GripUp",Vector3.new(0,1,0))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"],"ToolTip",ToolTip)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"],"CanBeDropped",true)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["LocalScript"],"Disabled",false)
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"],"Name",Name)
-	while true do
-	game:GetService("RunService").RenderStepped:wait()
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"],"Color",Color3.new(255/255,0/255,0/255)) 
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"],"EffectCloud",Color3.new(255/255,0/255,0/255))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"],"Color",Color3.new(255/255,0/255,0/255))
-CE:FireEvent("PompousTheCloud",MainUserW["Head"],"Color",Color3.new(255/255,0/255,0/255))
-    for i = 0,255,100 do
-	game:GetService("RunService").RenderStepped:wait()
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"],"Color",Color3.new(255/255,i/255,0/255))  
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"],"EffectCloud",Color3.new(255/255,i/255,0/255))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"],"Color",Color3.new(255/255,i/255,0/255))
-CE:FireEvent("PompousTheCloud",MainUserW["Head"],"Color",Color3.new(255/255,i/255,0/255))
-    end
-    for i = 255,0,-100 do
-	game:GetService("RunService").RenderStepped:wait()
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"],"Color",Color3.new(i/255,255/255,0/255))  
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"],"EffectCloud",Color3.new(i/255,255/255,0/255))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"],"Color",Color3.new(i/255,255/255,0/255))
-CE:FireEvent("PompousTheCloud",MainUserW["Head"],"Color",Color3.new(i/255,255/255,0/255))
-    end
-    for i = 0,255,100 do
-	game:GetService("RunService").RenderStepped:wait()
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"],"Color",Color3.new(0/255,255/255,i/255)) 
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"],"EffectCloud",Color3.new(0/255,255/255,i/255))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"],"Color",Color3.new(0/255,255/255,i/255))
-CE:FireEvent("PompousTheCloud",MainUserW["Head"],"Color",Color3.new(0/255,255/255,i/255))
-    end
-    for i = 255,0,-100 do
-	game:GetService("RunService").RenderStepped:wait()
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"],"Color",Color3.new(0/255,i/255,255/255))
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["EffectCloud"],"Color",Color3.new(0/255,i/255,255/255))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"],"Color",Color3.new(0/255,i/255,255/255))
-CE:FireEvent("PompousTheCloud",MainUserW["Head"],"Color",Color3.new(0/255,i/255,255/255))
-    end
-    for i = 0,255,100 do
-    game:GetService("RunService").RenderStepped:wait()
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"],"Color",Color3.new(i/255,0/255,255/255))
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["EffectCloud"],"Color",Color3.new(i/255,0/255,255/255))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"],"Color",Color3.new(i/255,0/255,255/255))
-CE:FireEvent("PompousTheCloud",MainUserW["Head"],"Color",Color3.new(i/255,0/255,255/255))
-    end
-    for i = 255,0,-100 do
-	game:GetService("RunService").RenderStepped:wait()
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["Handle"],"Color",Color3.new(255/255,0/255,i/255))
-CE:FireEvent("PompousTheCloud",MainUserW["PompousTheCloud"]["EffectCloud"],"Color",Color3.new(255/255,0/255,i/255))
-CE:FireEvent("PompousTheCloud",MainUserW["SuperFlyGoldBoombox"]["Handle"],"Color",Color3.new(255/255,0/255,i/255))
-CE:FireEvent("PompousTheCloud",MainUserW["Head"],"Color",Color3.new(255/255,0/255,i/255))
-    end
-end
-end
     if msg:lower() == "^arms" then
 		game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud") -- YOUR GAMEPASS
 
@@ -1330,7 +1155,6 @@ game.Players.LocalPlayer.Character.PompousTheCloud:Remove()
 game.Workspace.GiveTool:FireServer(2187476, "PompousTheCloud")
 end 
 end
-end)
 end)
 
 Close.Name = "Close"
