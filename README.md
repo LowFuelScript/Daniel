@@ -171,6 +171,7 @@ game:GetService("Players").LocalPlayer.Chatted:Connect(function(msg)
 ^server -- spawns a huge baseplate
 ^scar -- TRXSH GANG scar
 ^rose -- rose with pink smoke
+^box
 ^castle -- Princess Peach Castle
 ^badnoob -- awful noob
 ^LMG -- large machine gun
@@ -266,6 +267,37 @@ re   --reset
         wait()
         loadstring(game:HttpGet("https://pastebin.com/raw/Eu8PxKeF"))()
     end
+    if msg:lower() == "^box" then
+    local ME = game:GetService("Players").LocalPlayer
+function FireEvent(ItemName, Object, Property, Value)
+  ME.Character:FindFirstChild(ItemName)["ServerControl"]:InvokeServer("SetProperty",{["Value"]=Value,["Property"]=Property,["Object"]=Object})
+end
+game.Workspace.GiveTool:FireServer(7671476, "PompousTheCloud")
+ME["Backpack"]:WaitForChild("PompousTheCloud").Parent = ME.Character
+ME["Backpack"]:WaitForChild("SuperFlyGoldBoombox").Parent = ME.Character
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"],"CanBeDropped",true)
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"],"TextureId","rbxassetid://2255562684")
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"]["Handle"]["Mesh"],"MeshId","rbxassetid://2255562649")
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"]["Handle"]["Mesh"],"TextureId","rbxassetid://2255562684")
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"]["Handle"]["Mesh"],"Scale",Vector3.new(2, 1, 0.5))
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"],"GripPos",Vector3.new(-0.8, 0, 0.6))
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"],"GripUp",Vector3.new(3, 0, 0))
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"],"GripRight",Vector3.new(1, 0, 0))
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"]["Handle"]["BoomboxSound"],"EmitterSize","99999")
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"]["Handle"]["BoomboxSound"],"MaxDistance","99999")
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"]["Handle"]["BoomboxSound"],"Volume","10")
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"]["Handle"]["BoomboxSound"],"PlaybackLoudness","99999")
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"],"ToolTip","Loud Box")
+FireEvent("PompousTheCloud",ME.Character["PompousTheCloud"]["Handle"],"Transparency","1")
+while wait() do 
+print("Made By Daniel")
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"]["Handle"]["BoomboxSound"],"EmitterSize","99999")
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"]["Handle"]["BoomboxSound"],"MaxDistance","99999")
+wait(0.01)
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"]["Handle"]["BoomboxSound"],"Volume","10")
+FireEvent("PompousTheCloud",ME.Character["SuperFlyGoldBoombox"]["Handle"]["BoomboxSound"],"PlaybackLoudness","99999")
+end
+end
     if msg:lower() == "^light machine" then
         game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
         wait()
