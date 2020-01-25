@@ -1519,7 +1519,7 @@ scanning.Text = "Hello WhiteH_oes2! Happy to have you here Daniel's Alt! :)"
 wait(3)
 OpenGUI.Visible = true
 CheckPlayer.Visible = false
-elseif game.Players.LocalPlayer.Name == "AlphaBanners" then
+elseif game.Players.LocalPlayer.Name == "" then
 	wait(7)
 scanning.Text = "Hello AlphaBanners! Happy to have you here Buyer! :)"
 wait(3)
