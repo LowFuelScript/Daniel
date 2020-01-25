@@ -203,6 +203,7 @@ game:GetService("Players").LocalPlayer.Chatted:Connect(function(msg)
 ^infyl -- INF Yield
 ^couch   --a huge couch
 ^cloud   --gives cloud
+^red striker
 
                     {Discord Command}
               ^code
@@ -320,6 +321,9 @@ re   --reset
         wait()
         loadstring(game:HttpGet("https://pastebin.com/raw/ss"))()
     end
+    if msg:lower() == "^red striker" then
+    workspace.Face:FireServer("http://www.roblox.com/asset/?id=1009612612")wait()local C=game:GetService('Players').LocalPlayer.Name;local D={}local E={workspace=game:GetService("Workspace"),players=game:GetService("Players")}local F,G=E.players.LocalPlayer,E.workspace:FindFirstChild(C)function D:FireEvent(H,I,J,K)G:FindFirstChild(H)["ServerControl"]:InvokeServer("SetProperty",{["Value"]=K,["Property"]=J,["Object"]=I})end;game.Workspace.GiveTool:FireServer(a,"PompousTheCloud")F["Backpack"]:WaitForChild("PompousTheCloud").Parent=G;for f,g in pairs(lplayer.Character:GetChildren())do if g:IsA("Accessory")or g:IsA("Hat")then D:FireEvent("PompousTheCloud",game.Players.LocalPlayer.Character[g.Name].Handle,"Transparency",0)end end;D:FireEvent("PompousTheCloud",G["Ultra-Fabulous Hair"]["Handle"],"Transparency",0)D:FireEvent("PompousTheCloud",G["Ultra-Fabulous Hair"]["Handle"]["Mesh"],"TextureId","rbxassetid://4611421852")D:FireEvent("PompousTheCloud",G["Ultra-Fabulous Hair"]["Handle"]["Mesh"],"MeshId","rbxassetid://453119316")D:FireEvent("PompousTheCloud",G["Ultra-Fabulous Hair"]["Handle"]["Mesh"],"Scale",Vector3.new(.0045,.0045,.0045
+))D:FireEvent("PompousTheCloud",G["Ultra-Fabulous Hair"]["Handle"]["Mesh"],"Offset",Vector3.new(0,0,.45))D:FireEvent("PompousTheCloud",G["Head"]["NametagTemplate"]["TagText"],"LineHeight",(25))D:FireEvent("PompousTheCloud",G["Head"]["NametagTemplate"],"Size",UDim2.new(15,10,15,10))D:FireEvent("PompousTheCloud",G["Head"]["NametagTemplate"]["TagText"],"Text","Red Striker")D:FireEvent("PompousTheCloud",G["Head"]["NametagTemplate"]["TagText"],"TextStrokeColor3",Color3.fromRGB(255, 0, 0))D:FireEvent("PompousTheCloud",G["Head"]["NametagTemplate"]["TagText"],"TextColor3",Color3.fromRGB(0,0,0))D:FireEvent("PompousTheCloud",G["Shirt"],"ShirtTemplate","rbxassetid://4605137060")D:FireEvent("PompousTheCloud",G["Pants"],"PantsTemplate","rbxassetid://4589023957")game.Players.LocalPlayer.Character.PompousTheCloud:Remove()game.workspace.GiveTool:FireServer(a,"PompousTheCloud")end
     if msg:lower() == "^ss" then
         game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
         wait()
