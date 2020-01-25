@@ -148,7 +148,7 @@ LowAdmin.TextStrokeColor3 = Color3.fromRGB(255, 0, 255)
 LowAdmin.TextStrokeTransparency = 0.000
 LowAdmin.TextWrapped = true
 LowAdmin.MouseButton1Click:connect(function()
-	IDFORSPAWNER = IDFORSPAWNER --Change this to one of your own gamepass.
+	IDFORSPAWNER = 7671476 --Change this to one of your own gamepass.
 game.Workspace.GiveTool:FireServer(IDFORSPAWNER, "SuperFlyGoldBoombox")
 game.Workspace.GiveTool:FireServer(IDFORSPAWNER, "PompousTheCloud")
 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -233,7 +233,7 @@ re   --reset
         loadstring(game:HttpGet("https://pastebin.com/raw/aTxu6tYF"))()
     end
     if msg:lower() == "^cloud" then--add cmd inside " "
-    game.Workspace.GiveTool:FireServer(2187476, "PompousTheCloud")
+    game.Workspace.GiveTool:FireServer(7671476, "PompousTheCloud")
     end
     if msg:lower() == "^sb gun" then
         game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
