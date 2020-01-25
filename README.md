@@ -1488,7 +1488,13 @@ elseif game.Players.LocalPlayer.Name == "AlphaBanners" then
 scanning.Text = "Hello AlphaBanners! Happy to have you here Buyer! :)"
 wait(3)
 OpenGUI.Visible = true
-CheckPlayer.Visible = false
+CheckPlayer.Visible = false -- 
+elseif game.Players.LocalPlayer.Name == "amirrr21494" then
+	wait(6)
+scanning.Text = "Hello amirrr21494! Happy to have you here Buyer! :)"
+wait(4)
+OpenGUI.Visible = true
+CheckPlayer.Visible = false -- 
 elseif game.Players.LocalPlayer.Name == "Blacklisted" then
 	game.Players.LocalPlayer:kick("You are Blacklisted from this admin")
 else
