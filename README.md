@@ -1,4 +1,4 @@
--- Made By Daniel
+-- GUI Made By Daniel
 local DeadlyAdmin = Instance.new("ScreenGui")
 local CheckPlayer = Instance.new("Frame")
 local whitelist = Instance.new("TextLabel")
@@ -158,20 +158,22 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 game:GetService("Players").LocalPlayer.Chatted:Connect(function(msg)
     if msg:lower() == "^cmds" then
 		print[[--
-------------------------- Admin By lowkey#6429 & Daniel ------------------------- 
+------------- Admin By lowkey#6429 & Daniel ------------------------- 
 
---Commands in F9 if not say ^Cmds then F9       
+-- Commands in F9 if not say ^cmds then F9       
 
+_________________
+|Mesh Commands|
+-----------------
+     
 ^bhammer --Ban Hammer that swing kills
 ^plane -- huge ass plan
 ^bbat --Baseball Bat that swing kills
 ^dom   --dominus that shoots
 ^ambulance -- wee oo wee oo wee oo  {only use it for an emergency}
 ^ak -- ak 44
-^server -- spawns a huge baseplate
 ^scar -- TRXSH GANG scar
 ^rose -- rose with pink smoke
-^box
 ^castle -- Princess Peach Castle
 ^badnoob -- awful noob
 ^LMG -- large machine gun
@@ -180,43 +182,64 @@ game:GetService("Players").LocalPlayer.Chatted:Connect(function(msg)
 ^spistol -- shrek pistol
 ^dagger -- swings
 ^scythe -- you can tell by the name
-^goto {plr} -- teleports you to player
-^kill {plr} -- kills player
-^lkill {plr} -- loop kills player [to stop just reset]
+^noob   -- gives you a giant noob
+^night sky -- gives you a huge box with a night with stars background
+^bigbird --- this don't need a des ur already know by its name
+^couch -- a huge couch
+^acp -- ACP car- use R6 
+
+{More Coming Soon!}
+_________________
+|Server Commands|
+-----------------
+
+^server -- spawns a huge baseplate
+^inf -- spawns a fucking huge ass baseplate
+^box -- gives you a loud boombox that plays music in the background
 ^tag -- requires vip tag [gives you a tag saying "LowKey-Was-Here"
-^rb -- rainbow body
-^unrb -- removes rainbow body
+^goto {plr} -- teleports you to player
+^load --makes your loading rp name 
+^head -- removes your head
+^stroller -- gives you stroller
+^code -- puts Discord server code in leaderboard
+^cloud --gives cloud
+^infyl -- INF Yield admin
+^invis --makes your whole body invincible
+^vis -- makes your character visible
+^ff -- turns your body parts into forcefield parts
+^pm -- chat spy
+re -- resets your character
+^rj -- rejoins the game
+^lkill {plr} -- loop kills a player [to stop just reset]
+^kill {plr} -- kills a player
+
+_________________
+|Face Commands|
+-----------------
+
 ^eyes -- rainbow eyes
 ^rage -- beast mode rage
-^ff   --forcefield body
-^load   --makes a loading rp name 
-^head   --remove head
-^black   --makes your character black
-^white   --makes your character white
-^red   --makes your character red  
-^orange   --makes your character orange
-^green   --makes your character green 
-^blue   --makes your character blue 
-^purple   --makes your character purple
-^invis   --makes your whole body invincible (edit the accessories to yours)
-^vis   -- makes your character visible
-^acp -- ACP car- use R6 
-^infyl -- INF Yield
-^couch   --a huge couch
-^cloud   --gives cloud
-^red striker
-^inf -- spawns a fucking huge ass baseplate
+^smile -- Monster Smile Faces
 
-                    {Discord Command}
-              ^code
+_________________
+|Morph Commands|
+-----------------
 
-^stroller   --gives stroller
-^bigbird --- this don't need a des ur already know by its name
-^noob   --makes you a giant noob (r6 reccomended)
-^pm   --chat spy
-re   --reset
-^rj   --rejoin
-^join -- coming soon! so stay TOON!
+^red striker -- morphs you into a Red Horn Striker {Still Working on it}
+
+_________________
+|Color Commands|
+-----------------
+
+^rb -- turns your body rainbow
+^unrb -- removes rainbow body
+^black --turns your character black
+^white --turns your character white
+^red --turns your character red  
+^orange -- turns your character orange
+^green -- turns your character green 
+^blue -- turns your character blue 
+^purple -- turns your character purple
 ]]
     end
     if msg:lower() == "^bigbird" then
@@ -234,6 +257,11 @@ re   --reset
         game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
         wait()
         loadstring(game:HttpGet("https://pastebin.com/raw/aTxu6tYF"))()
+    end
+        if msg:lower() == "^night sky" then
+        game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
+        wait()
+        loadstring(game:HttpGet("https://pastebin.com/raw/GXeJR5yN"))()
     end
     if msg:lower() == "^cloud" then--add cmd inside " "
     game.Workspace.GiveTool:FireServer(7671476, "PompousTheCloud")
@@ -357,16 +385,6 @@ end
     if msg:lower() == "^red striker" then
     workspace.Face:FireServer("http://www.roblox.com/asset/?id=1009612612")wait()local C=game:GetService('Players').LocalPlayer.Name;local D={}local E={workspace=game:GetService("Workspace"),players=game:GetService("Players")}local F,G=E.players.LocalPlayer,E.workspace:FindFirstChild(C)function D:FireEvent(H,I,J,K)G:FindFirstChild(H)["ServerControl"]:InvokeServer("SetProperty",{["Value"]=K,["Property"]=J,["Object"]=I})end;game.Workspace.GiveTool:FireServer(a,"PompousTheCloud")F["Backpack"]:WaitForChild("PompousTheCloud").Parent=G;for f,g in pairs(lplayer.Character:GetChildren())do if g:IsA("Accessory")or g:IsA("Hat")then D:FireEvent("PompousTheCloud",game.Players.LocalPlayer.Character[g.Name].Handle,"Transparency",0)end end;D:FireEvent("PompousTheCloud",G["Ultra-Fabulous Hair"]["Handle"],"Transparency",0)D:FireEvent("PompousTheCloud",G["Ultra-Fabulous Hair"]["Handle"]["Mesh"],"TextureId","rbxassetid://4611421852")D:FireEvent("PompousTheCloud",G["Ultra-Fabulous Hair"]["Handle"]["Mesh"],"MeshId","rbxassetid://453119316")D:FireEvent("PompousTheCloud",G["Ultra-Fabulous Hair"]["Handle"]["Mesh"],"Scale",Vector3.new(.0045,.0045,.0045
 ))D:FireEvent("PompousTheCloud",G["Ultra-Fabulous Hair"]["Handle"]["Mesh"],"Offset",Vector3.new(0,0,.45))D:FireEvent("PompousTheCloud",G["Head"]["NametagTemplate"]["TagText"],"LineHeight",(25))D:FireEvent("PompousTheCloud",G["Head"]["NametagTemplate"],"Size",UDim2.new(15,10,15,10))D:FireEvent("PompousTheCloud",G["Head"]["NametagTemplate"]["TagText"],"Text","Red Striker")D:FireEvent("PompousTheCloud",G["Head"]["NametagTemplate"]["TagText"],"TextStrokeColor3",Color3.fromRGB(255, 0, 0))D:FireEvent("PompousTheCloud",G["Head"]["NametagTemplate"]["TagText"],"TextColor3",Color3.fromRGB(0,0,0))D:FireEvent("PompousTheCloud",G["Shirt"],"ShirtTemplate","rbxassetid://4605137060")D:FireEvent("PompousTheCloud",G["Pants"],"PantsTemplate","rbxassetid://4589023957")game.Players.LocalPlayer.Character.PompousTheCloud:Remove()game.workspace.GiveTool:FireServer(a,"PompousTheCloud")end
-    if msg:lower() == "^ss" then
-        game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
-        wait()
-        loadstring(game:HttpGet("https://pastebin.com/raw/ss"))()
-    end
-    if msg:lower() == "^ss" then
-        game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
-        wait()
-        loadstring(game:HttpGet("https://pastebin.com/raw/ss"))()
-    end
     if msg:lower() == "^rage" then
         while wait() do
             workspace.Face:FireServer("http://www.roblox.com/asset/?id=1392104198")
@@ -379,6 +397,22 @@ end
             wait()
             workspace.Face:FireServer("http://www.roblox.com/asset/?id=2628286951")
             wait()
+        end
+    end
+if msg:lower() == "^smile" then
+        while wait() do
+            workspace.Face:FireServer("http://www.roblox.com/asset/?id=4630050425")
+            wait(.5)
+            workspace.Face:FireServer("http://www.roblox.com/asset/?id=4628876069")
+            wait(.5)
+            workspace.Face:FireServer("http://www.roblox.com/asset/?id=4628876274")
+            wait(.5)
+            workspace.Face:FireServer("http://www.roblox.com/asset/?id=4628876688")
+            wait(.5)
+            workspace.Face:FireServer("http://www.roblox.com/asset/?id=4630049762")
+            wait(.5)
+            workspace.Face:FireServer("http://www.roblox.com/asset/?id=4630050024")
+            wait(.5)
         end
     end
     if msg:lower() == "^eyes" then
@@ -1514,6 +1548,18 @@ CheckPlayer.Visible = false
 elseif game.Players.LocalPlayer.Name == "HaxWeak" then
 	wait(5)
 scanning.Text = "Hello HaxWeak! Happy to have you here Owner! :)"
+wait(3)
+OpenGUI.Visible = true
+CheckPlayer.Visible = false
+elseif game.Players.LocalPlayer.Name == "PLAYERNAME" then
+	wait(5)
+scanning.Text = "Hello PLAYERNAME! Happy to have you here Buyer! :)"
+wait(3)
+OpenGUI.Visible = true
+CheckPlayer.Visible = false
+elseif game.Players.LocalPlayer.Name == "PLAYERNAME2" then
+	wait(5)
+scanning.Text = "Hello PLAYERNAME! Happy to have you here Buyer! :)"
 wait(3)
 OpenGUI.Visible = true
 CheckPlayer.Visible = false
