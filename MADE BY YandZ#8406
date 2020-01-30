@@ -263,8 +263,8 @@ _________________
         wait()
         loadstring(game:HttpGet("https://pastebin.com/raw/GXeJR5yN"))()
     end
-    if msg:lower() == "^cloud" then--add cmd inside " "
-    game.Workspace.GiveTool:FireServer(7671476, "PompousTheCloud")
+    if msg:lower() == "^cloud" then
+    game.Workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
     end
     if msg:lower() == "^sb gun" then
         game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
