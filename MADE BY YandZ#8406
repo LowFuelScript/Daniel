@@ -1557,9 +1557,9 @@ scanning.Text = "Hello vHumanFleshEater! Happy to have you here Daniel's Alt! :)
 wait(3)
 OpenGUI.Visible = true
 CheckPlayer.Visible = false
-elseif game.Players.LocalPlayer.Name == "PLAYERNAME2" then
+elseif game.Players.LocalPlayer.Name == "Sleesapan" then
 	wait(5)
-scanning.Text = "Hello PLAYERNAME! Happy to have you here Buyer! :)"
+scanning.Text = "Hello Sleesapan! Happy to have you here Lowkey's Alt! :)"
 wait(3)
 OpenGUI.Visible = true
 CheckPlayer.Visible = false
