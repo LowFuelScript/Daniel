@@ -176,7 +176,6 @@ _________________
 ^rose -- rose with pink smoke
 ^castle -- Princess Peach Castle
 ^badnoob -- awful noob
-^LMG -- large machine gun
 ^light machine -- ssg 37 machine gun
 ^sb gun -- sub machine gun
 ^spistol -- shrek pistol
@@ -186,7 +185,8 @@ _________________
 ^night sky -- gives you a huge box with a night with stars background
 ^bigbird --- this don't need a des ur already know by its name
 ^couch -- a huge couch
-^acp -- ACP car- use R6 
+^acp -- ACP car- use R6
+^kleg -- gives you a left Korblox leg {R6 required}
 
 {More Coming Soon!}
 _________________
@@ -201,8 +201,10 @@ _________________
 ^load --makes your loading rp name 
 ^head -- removes your head
 ^stroller -- gives you stroller
-^code -- puts Discord server code in leaderboard
+^elite -- puts ELITE by your name in the leaderboard
 ^cloud --gives cloud
+^boombox -- gives you a boombox
+^unicorn -- gives you a unicorn
 ^infyl -- INF Yield admin
 ^invis --makes your whole body invincible
 ^vis -- makes your character visible
@@ -212,6 +214,9 @@ re -- resets your character
 ^rj -- rejoins the game
 ^lkill {plr} -- loop kills a player [to stop just reset]
 ^kill {plr} -- kills a player
+^dtool -- drops the tool you are holding
+^go re -- must have vip tag {Makes your tag text into a gore website
+^clorox -- must click on someone's head in order to drink it
 
 _________________
 |Face Commands|
@@ -247,6 +252,9 @@ _________________
         wait()
         loadstring(game:HttpGet("https://pastebin.com/raw/wKpufj5P"))()
     end
+    if msg:lower() == "^unicorn" then
+    game.Workspace.GiveTool:FireServer(IDFORSPAWNER, "FluffyUnicorn")
+    end
     if msg:lower() == "^plane" then
         game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
         wait()
@@ -263,14 +271,66 @@ _________________
         wait()
         loadstring(game:HttpGet("https://pastebin.com/raw/GXeJR5yN"))()
     end
+    if msg:lower() == "^boombox" then
+    game.Workspace.GiveTool:FireServer(IDFORSPAWNER, "SuperFlyGoldBoombox")
+    end
+    if msg:lower() == "^go re" then
+local UserName  = game:GetService("Players").LocalPlayer.Name -- DON'T EDIT
+local Name = "NAME"-- NAME THE TOOL IF WANT
+local CE = {} -- DON'T EDIT
+local C = { -- DON'T EDIT
+    workspace = game:GetService("Workspace"),
+    players = game:GetService("Players")
+}
+local MainUserP, MainUserW = C.players.LocalPlayer, C.workspace:FindFirstChild(UserName) -- DON'T EDIT
+ 
+ 
+function CE:FireEvent(ItemName, Object, Property, Value) -- Don't Change the 'Value'
+    MainUserW:FindFirstChild(ItemName)["ServerControl"]:InvokeServer("SetProperty",{["Value"]=Value,["Property"]=Property,["Object"]=Object})
+end
+ 
+C.workspace.Buy:FireServer(0, "PompousTheCloud") -- Change to your Object
+ 
+MainUserP["Backpack"]:WaitForChild("PompousTheCloud").Parent = MainUserW
+while wait() do
+    CE:FireEvent("PompousTheCloud",MainUserW["Head"]["NametagTemplate"]["TagText"],"Font","SciFi")
+    CE:FireEvent("PompousTheCloud",MainUserW["Head"]["NametagTemplate"]["TagText"],"LineHeight",(25))
+    CE:FireEvent("PompousTheCloud",MainUserW["Head"]["NametagTemplate"],"Size",UDim2.new(15,10,15,10))
+    CE:FireEvent("PompousTheCloud",MainUserW["Head"]["NametagTemplate"]["TagText"],"Text","rigoremortis.com")
+    CE:FireEvent("PompousTheCloud",MainUserW["Head"]["NametagTemplate"]["TagText"],"TextColor3",Color3.new(0,0,0))
+    wait(0.00000001)
+    CE:FireEvent("PompousTheCloud",MainUserW["Head"]["NametagTemplate"]["TagText"],"TextStrokeColor3",Color3.new(255,0,0))
+    wait(0.0000000001)
+    CE:FireEvent("PompousTheCloud",MainUserW["Head"]["NametagTemplate"]["TagText"],"TextColor3",Color3.new(0,0,0))
+    wait(0.0000000001)
+    CE:FireEvent("PompousTheCloud",MainUserW["Head"]["NametagTemplate"]["TagText"],"TextStrokeColor3",Color3.new(0,255,255))
+    wait(0.0000000001)
+    CE:FireEvent("PompousTheCloud",MainUserW["Head"]["NametagTemplate"]["TagText"],"TextColor3",Color3.new(0,0,0))
+    wait(0.0000000001)
+    CE:FireEvent("PompousTheCloud",MainUserW["Head"]["NametagTemplate"]["TagText"],"TextStrokeColor3",Color3.new(255,255,0))
+    wait(0.0000000001)
+   end
+end
     if msg:lower() == "^cloud" then
     game.Workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
+    end
+    if msg:lower() == "^kleg" then
+        game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
+        wait()
+        loadstring(game:HttpGet("https://pastebin.com/raw/apAR4EG4"))()
     end
     if msg:lower() == "^sb gun" then
         game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
         wait()
         loadstring(game:HttpGet("https://pastebin.com/raw/d21axhA2"))()
     end
+    if msg:lower() == "'dtool" then
+        for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+            if (v:IsA("Tool")) or (v:IsA("Tool")) then
+                v.Parent = workspace
+            end
+        end
+end
     if msg:lower() == "^spistol" then
         game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
         wait()
@@ -291,10 +351,10 @@ _________________
         wait()
         loadstring(game:HttpGet("https://pastebin.com/raw/2zJ3TaxL"))()
     end
-    if msg:lower() == "^LMG" then
+    if msg:lower() == "^clorox" then
         game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
         wait()
-        loadstring(game:HttpGet("https://pastebin.com/raw/Eu8PxKeF"))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/4XaDZ45a"))()
     end
     if msg:lower() == "^box" then
     local ME = game:GetService("Players").LocalPlayer
@@ -332,10 +392,10 @@ end
         wait()
         loadstring(game:HttpGet("https://pastebin.com/raw/EhFhTT1z"))()
     end
-    if msg:lower() == "^code" then
+    if msg:lower() == "^elite" then
         game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
         wait()
-        loadstring(game:HttpGet("https://pastebin.com/raw/UrBHqL9U"))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/V62rfrYX"))()
     end
     if msg:lower() == "^server" then
         game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
@@ -357,10 +417,10 @@ end
         wait()
         loadstring(game:HttpGet("https://pastebin.com/raw/NJsGPZC7"))()
     end
-    if msg:lower() == "^ss" then
+    if msg:lower() == "^pipe" then
         game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
         wait()
-        loadstring(game:HttpGet("https://pastebin.com/raw/ss"))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/M96fqTiD"))()
     end
     if msg:lower() == "^ss" then
         game.workspace.GiveTool:FireServer("IDFORSPAWNER", "PompousTheCloud")
